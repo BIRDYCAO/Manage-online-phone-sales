@@ -5,6 +5,8 @@
 #include <string>
 #include <sstream>
 #include "SanPham.cpp"
+#include "GiaoDien.cpp"
+
 using namespace std;
 
 void DocFileSP(vector<SanPham> &DS_SanPham)
