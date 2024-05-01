@@ -11,8 +11,8 @@ int main()
 {
     vector<SanPham> DS_SanPham;
     DocFileSP(DS_SanPham);
-    User us;
-    MenuUser(us, DS_SanPham);
+	User us;
+	MenuUser(us, DS_SanPham);
     return 0;
 }
 

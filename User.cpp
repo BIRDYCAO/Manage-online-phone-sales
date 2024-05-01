@@ -282,6 +282,7 @@ class User
 
 void MenuUser(User &us, vector<SanPham> DS_SanPham) 
 {
+	bool kt = true;
     do {
         system("cls");
         SetColor(0, 11);
@@ -305,7 +306,7 @@ void MenuUser(User &us, vector<SanPham> DS_SanPham)
             case 1: 
 			{
                 us.us1(DS_SanPham);
-                bool kt = true;
+
 				while(kt)
 				{
 					SetColor(0, 10);
@@ -390,7 +391,6 @@ void MenuUser(User &us, vector<SanPham> DS_SanPham)
         		getline(cin, tentim);
         		us.us2(DS_SanPham, tentim);
         		
-        		bool kt = true;
 				while(kt)
 				{
 					SetColor(0, 10);
@@ -475,7 +475,6 @@ void MenuUser(User &us, vector<SanPham> DS_SanPham)
 				getline(cin, tenhang);
 				us.us3(DS_SanPham, tenhang);
 				
-				bool kt = true;
 				while(kt)
 				{
 					SetColor(0, 10);
@@ -577,10 +576,11 @@ void MenuUser(User &us, vector<SanPham> DS_SanPham)
 			{
 				SetColor(0, 12);
 				cout << "vui long nhap lai lua chon ! " << endl;
+				system("pause");
 				break;
 			}
         }
-    } while (true); 
+    } while (kt); 
 }
 
 
